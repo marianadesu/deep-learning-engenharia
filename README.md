@@ -84,7 +84,7 @@ O relatório contém:
 3. Recomendações de manutenção;
 4. Nível de urgência.
 
-### Tratamento De Erro Da API
+### Tratamento de Erro da API
 
 Caso a chave da API não esteja configurada ou a conta esteja sem cota disponível, o código não interrompe a execução.
 
@@ -92,7 +92,7 @@ Nesse caso, ele gera um relatório local automaticamente, usando os mesmos dados
 
 Isso permite que o projeto continue funcionando mesmo sem acesso ativo à API.
 
-### Exemplo De Saída
+### Exemplo de Saída
 
 ```text
 RELATORIO TECNICO DE MANUTENCAO
@@ -111,6 +111,6 @@ Alto. O equipamento deve ser avaliado antes de continuar operando por longos per
 
 ```
 
-## Limitacoes
+## Limitações
 
 Este projeto usa dados simulados, portanto nao deve ser usado para decisoes reais de manutencao. Em um sistema real, seria necessario usar dados historicos confiaveis, validar sensores, acompanhar o desempenho do modelo e ter revisao de especialistas.
