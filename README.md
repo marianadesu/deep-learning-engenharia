@@ -109,7 +109,7 @@ Recomenda-se realizar inspecao preventiva, verificar rolamentos, conexoes eletri
 Nivel de urgencia:
 Alto. O equipamento deve ser avaliado antes de continuar operando por longos periodos.
 
-
+```
 
 ## Limitacoes
 
