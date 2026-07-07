@@ -1,6 +1,10 @@
-# Previsao de Falhas em Equipamentos com Rede Neural
+# Previsão de Falhas com Rede Neural
 
-Projeto simples para demonstrar, em um contexto de Engenharia, como uma rede neural pode aprender padroes em dados de sensores e estimar risco de falha em equipamentos industriais.
+Este projeto demonstra uma aplicação simples de Deep Learning em Engenharia. 
+O objetivo é prever risco de falha em um equipamento industrial usando dados simulados de sensores, como corrente, tensão, temperatura, vibração e tempo desde a última manutenção.
+
+O código foi desenvolvido em Python e executado pelo GitHub Actions.
+
 
 ## Tema
 
@@ -42,20 +46,6 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Como colocar no GitHub
-
-Depois de criar um repositorio vazio no GitHub, execute estes comandos dentro da pasta do projeto:
-
-```bash
-git init
-git add .
-git commit -m "Projeto de deep learning aplicado a engenharia"
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
-git push -u origin main
-```
-
-Troque `SEU-USUARIO` e `NOME-DO-REPOSITORIO` pelos dados do seu GitHub.
 
 ## O que o codigo faz
 
@@ -65,11 +55,7 @@ Troque `SEU-USUARIO` e `NOME-DO-REPOSITORIO` pelos dados do seu GitHub.
 4. Treina uma rede neural pequena com uma camada oculta.
 5. Mostra a acuracia, matriz de confusao e exemplos de previsao.
 
-## Exemplo de uso em apresentacao
 
-Este codigo pode ser apresentado como uma aplicacao pratica de Deep Learning em Engenharia:
-
-> "A rede neural observa variaveis de sensores e aprende padroes associados a falhas. Em uma aplicacao real, isso poderia apoiar manutencao preditiva, ajudando a reduzir paradas inesperadas e aumentar a seguranca operacional."
 
 ## Limitacoes
 
