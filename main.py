@@ -1,6 +1,3 @@
-Sim! Você pode substituir o `main.py` por essa versão comentada. Ela faz a mesma coisa, só que com explicações usando `#`:
-
-```python
 import numpy as np
 
 # Funcao de ativacao sigmoid.
@@ -224,7 +221,4 @@ def main():
 # Garante que a funcao main so sera executada quando o arquivo for rodado diretamente.
 if __name__ == "__main__":
     main()
-```
-
-No GitHub, é só abrir o `main.py`, clicar no lápis, substituir pelo código comentado e dar **Commit changes**.
 
