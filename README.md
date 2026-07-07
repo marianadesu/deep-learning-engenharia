@@ -113,4 +113,4 @@ Alto. O equipamento deve ser avaliado antes de continuar operando por longos per
 
 ## Limitações
 
-Este projeto usa dados simulados, portanto nao deve ser usado para decisoes reais de manutencao. Em um sistema real, seria necessario usar dados historicos confiaveis, validar sensores, acompanhar o desempenho do modelo e ter revisao de especialistas.
+Este projeto usa dados simulados, portanto nao deve ser usado para decisoes reais de manutenção. Em um sistema real, seria necessário usar dados históricos confiáveis, validar sensores, acompanhar o desempenho do modelo e ter revisão de especialistas.
