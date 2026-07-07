@@ -10,20 +10,20 @@ O código foi desenvolvido em Python e executado pelo GitHub Actions.
 
 O exemplo simula dados de um motor industrial usando variaveis comuns em manutencao:
 
-- corrente eletrica;
+- corrente elétrica;
 - tensao;
 - temperatura;
-- vibracao;
-- dias desde a ultima manutencao.
+- vibração;
+- dias desde a última manutencao.
 
-A rede neural aprende a classificar se a condicao do equipamento indica:
+A rede neural aprende a classificar se a condição do equipamento indica:
 
-- `0`: operacao normal;
+- `0`: operação normal;
 - `1`: risco de falha.
 
 ## Por que isso se relaciona com Deep Learning?
 
-Redes neurais artificiais aprendem padroes a partir de exemplos. Neste projeto, a rede recebe dados de funcionamento do equipamento e ajusta seus pesos internos para reduzir o erro entre a previsao e a classe correta.
+Redes neurais artificiais aprendem padrões a partir de exemplos. Neste projeto, a rede recebe dados de funcionamento do equipamento e ajusta seus pesos internos para reduzir o erro entre a previsão e a classe correta.
 
 Mesmo sendo um exemplo pequeno, ele mostra a ideia central:
 
@@ -53,7 +53,7 @@ python main.py
 2. Normaliza os dados de entrada.
 3. Divide os dados em treino e teste.
 4. Treina uma rede neural pequena com uma camada oculta.
-5. Mostra a acuracia, matriz de confusao e exemplos de previsao.
+5. Mostra a acurácia, matriz de confusão e exemplos de previsão.
 
 ## Relatório Técnico com IA Generativa
 
