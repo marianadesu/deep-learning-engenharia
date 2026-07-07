@@ -55,6 +55,60 @@ python main.py
 4. Treina uma rede neural pequena com uma camada oculta.
 5. Mostra a acuracia, matriz de confusao e exemplos de previsao.
 
+## Relatório Técnico com IA Generativa
+
+Além da rede neural para previsão de falhas, o projeto também possui uma segunda etapa voltada para IA Generativa.
+
+Essa etapa está no arquivo `relatorio_ia_generativa.py`.
+
+O objetivo desse arquivo é gerar um relatório técnico de manutenção a partir dos dados do equipamento analisado.
+
+### Como Funciona
+
+O código utiliza os seguintes dados do equipamento:
+
+- corrente elétrica;
+- tensão;
+- temperatura;
+- vibração;
+- dias desde a última manutenção;
+- probabilidade estimada de falha;
+- classificação do equipamento.
+
+Com essas informações, o programa monta um prompt técnico e tenta gerar um relatório usando uma API de IA Generativa.
+
+O relatório contém:
+
+1. Diagnóstico do equipamento;
+2. Possíveis causas do risco;
+3. Recomendações de manutenção;
+4. Nível de urgência.
+
+### Tratamento De Erro Da API
+
+Caso a chave da API não esteja configurada ou a conta esteja sem cota disponível, o código não interrompe a execução.
+
+Nesse caso, ele gera um relatório local automaticamente, usando os mesmos dados do equipamento.
+
+Isso permite que o projeto continue funcionando mesmo sem acesso ativo à API.
+
+### Exemplo De Saída
+
+```text
+RELATORIO TECNICO DE MANUTENCAO
+
+Diagnostico:
+O equipamento apresenta risco de falha, com probabilidade estimada de falha de 92.16%.
+
+Possiveis causas:
+A temperatura de 96 C, a vibracao de 5.2 mm/s e o periodo de 145 dias sem manutencao indicam uma condicao operacional critica.
+
+Recomendacoes:
+Recomenda-se realizar inspecao preventiva, verificar rolamentos, conexoes eletricas, sistema de ventilacao e historico de manutencao do equipamento.
+
+Nivel de urgencia:
+Alto. O equipamento deve ser avaliado antes de continuar operando por longos periodos.
+
 
 
 ## Limitacoes
