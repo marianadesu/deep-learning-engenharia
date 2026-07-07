@@ -63,7 +63,8 @@ def generate_report_with_ai(prompt):
 
 
 # Esta funcao cria um relatorio simples sem API.
-# Ela serve como alternativa caso a chave da API nao esteja configurada.
+# Ela serve como alternativa caso a chave da API nao esteja configurada
+# ou caso a conta esteja sem cota/credito disponivel.
 def generate_report_without_api(data):
     report = f"""
 RELATORIO TECNICO DE MANUTENCAO
@@ -89,11 +90,17 @@ def main():
 
     print("Gerando relatorio tecnico com IA Generativa...\n")
 
-    # Verifica se a chave da OpenAI existe.
-    # Se existir, usa IA generativa real.
-    # Se nao existir, usa um relatorio automatico simples.
+    # Se a chave da API existir, o codigo tenta usar IA generativa real.
+    # Caso a API falhe por falta de cota, chave invalida ou outro problema,
+    # o codigo continua funcionando e gera um relatorio local.
     if os.getenv("OPENAI_API_KEY"):
-        report = generate_report_with_ai(prompt)
+        try:
+            report = generate_report_with_ai(prompt)
+        except Exception as error:
+            print("Erro ao chamar a API da OpenAI.")
+            print(f"Motivo: {error}")
+            print("\nGerando relatorio local sem chamada de API.\n")
+            report = generate_report_without_api(equipment_data)
     else:
         print("OPENAI_API_KEY nao encontrada.")
         print("Gerando relatorio local sem chamada de API.\n")
